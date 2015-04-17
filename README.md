@@ -11,7 +11,7 @@ meteor add japetheape:class-helpers
 
 
 ## Example
-In this example we make a simple class and attach it to a collection so every findOne returns an instance of this class.
+In this example we make a simple class and attach it to a collection so every find returns an instance of this class.
 
 ### Define a class
 Here we define a simple class.
@@ -34,7 +34,7 @@ Games = new Mongo.collection('game')
 Games.attachClass(Game);
 
 // fetch the first game
-var game = Games.find({}).fetch()[0];
+var game = Games.findOne();
 
 game.test()
 // -> 'test'
