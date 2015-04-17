@@ -21,8 +21,8 @@ ClassHelpers = {
   }
 }
 
-Meteor.startup(function( ) {
+// Meteor.startup(function( ) {
   Mongo.Collection.prototype.attachClass = function(klass) {
     ClassHelpers.attachClassToCollection(klass, this);
   }
-});
+// });

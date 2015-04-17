@@ -14,6 +14,7 @@ Package.onUse(function(api) {
   api.versionsFrom('1.1.0.2');
   api.use('underscore');
   api.use(['minimongo']);
+  api.use('mongo', ['client', 'server']);
   api.addFiles('class-helpers.js');
   api.export('ClassHelpers');
 });
