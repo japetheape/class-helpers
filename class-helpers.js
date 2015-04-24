@@ -16,6 +16,7 @@ ClassHelpers = {
       if(oldTransform) {
         doc = oldTransform(doc);
       }
+      _.extend(klass.prototype, {collection: collection});
       return new klass(doc);
     }
   }
